@@ -1,0 +1,73 @@
+/************************ Navigatiebar ************************/
+.hero {
+  height: 100vh;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo {
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: blueviolet;
+  transition: 0.4s;
+}
+
+.active {
+  color: blueviolet;
+}
+
+/************************ Hero Content ************************/
+
+.content {
+  padding-left: 8%;
+  padding-top: 8%;
+  line-height: 40px;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 20px 0px 20px;
+}
+
+h3 {
+  color: grey;
+  font-size: 28px;
+  font-weight: 300;
+  margin-right: 50%;
+  line-height: 50px;
+}
+
+h3 span {
+  font-weight: 800;
+  color: black;
+}
