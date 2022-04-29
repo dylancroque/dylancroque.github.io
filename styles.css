@@ -1,8 +1,11 @@
 /************************ Navigatiebar ************************/
-.hero {
-  height: 100vh;
-  width: 100%;
+html {
   font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0px;
+  display: block;
 }
 
 nav {
@@ -10,6 +13,7 @@ nav {
   position: sticky;
   align-items: center;
   justify-content: space-between;
+  margin: 0px;
   padding-top: 30px;
   padding-left: 8%;
   padding-right: 8%;
@@ -18,13 +22,13 @@ nav {
 .logo {
   cursor: pointer;
   letter-spacing: 1px;
-  font-size: 25px;
   font-weight: 600;
 }
 
 h2 a {
   color: black;
   text-decoration: none;
+  font-size: clamp(10px, 25px, 30px);
 }
 
 nav ul li {
@@ -51,9 +55,16 @@ nav ul li a:hover {
 
 /************************ Hero Content ************************/
 
-.content {
+.hero {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-content {
   padding-left: 8%;
   padding-top: 8%;
+  padding-right: 8%;
   line-height: 40px;
 }
 
@@ -75,4 +86,100 @@ h3 {
 h3 span {
   font-weight: 800;
   color: black;
+}
+
+.profilepic {
+  height: 400px;
+  position: absolute;
+  right: 250px;
+  top: 50px;
+  opacity: 0.8;
+  padding: 0px;
+  display: none;
+}
+
+/************************ Main Content ************************/
+
+.middle-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.middle-content {
+  padding-left: 8%;
+  padding-top: 2%;
+  padding-right: 8%;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h5::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #555;
+  vertical-align: top;
+  margin-top: 11px;
+  margin-right: 20px;
+}
+
+.project-card {
+  margin: 150px 0px 0px;
+  padding: 2% 0px 2%;
+  position: relative;
+}
+
+.project-1-text {
+  margin-top: 10px;
+  max-width: 540px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 200;
+  color: grey;
+  line-height: 1.75;
+  letter-spacing: 0.015rem;
+}
+
+.project-1-pic {
+  background-color: grey;
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  right: 8%;
+  top: 10px;
+  border-radius: 10px;
+}
+
+.hvr-project-1-button {
+  width: 50px;
+}
+
+.hvr-project-1-button {
+  position: relative;
+  background-color: black;
+  height: 1px;
+}
+
+.hvr-project-1-button::before {
+  content: "";
+}
+
+#bekijkproject {
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
 }
