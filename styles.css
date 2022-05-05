@@ -89,27 +89,25 @@ h3 span {
 }
 
 .profilepic {
-  height: 400px;
+  height: 450px;
   position: absolute;
-  right: 250px;
-  top: 50px;
-  opacity: 0.8;
+  right: 150px;
+  top: 35px;
   padding: 0px;
-  display: none;
 }
 
 /************************ Main Content ************************/
 
 .middle-container {
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   position: relative;
 }
 
 .middle-content {
-  padding-left: 8%;
+  padding-left: 12%;
   padding-top: 2%;
-  padding-right: 8%;
+  padding-right: 12%;
 }
 
 h4 {
@@ -122,6 +120,7 @@ h5 {
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
+  margin-bottom: 100px;
 }
 
 h5::before {
@@ -136,13 +135,15 @@ h5::before {
 }
 
 .project-card {
-  margin: 150px 0px 0px;
+  margin: 150px 0px 400px;
   padding: 2% 0px 2%;
   position: relative;
+  height: 230px;
 }
 
 .project-1-text {
   margin-top: 10px;
+  margin-right: 55%;
   max-width: 540px;
 }
 
@@ -155,31 +156,147 @@ p {
 }
 
 .project-1-pic {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: grey;
-  width: 500px;
-  height: 250px;
+  width: 550px;
+  height: 350px;
   position: absolute;
-  right: 8%;
+  right: 0%;
   top: 10px;
   border-radius: 10px;
+  transition: 250ms ease-in-out;
 }
 
-.hvr-project-1-button {
-  width: 50px;
+.project-1-pic:hover {
+  transform: scale(1.03);
 }
 
-.hvr-project-1-button {
-  position: relative;
-  background-color: black;
-  height: 1px;
+.project-button {
+  position: absolute;
+  margin-top: 20px;
 }
 
-.hvr-project-1-button::before {
-  content: "";
-}
-
-#bekijkproject {
+main a {
+  color: black;
+  text-decoration: none;
   font-weight: bold;
   font-size: 14px;
-  color: #555;
+}
+
+main .project-button a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  left: 0%;
+  bottom: -15px;
+  transition: 0.3s;
+}
+
+main a:hover::after {
+  height: 10px;
+  width: 100%;
+}
+
+.webdesign-thumbnail {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  left: 0%;
+  top: 10px;
+  object-fit: cover;
+  object-position: 0 55%;
+  transition: 250ms ease-in-out;
+}
+
+.webdesign-thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.project-2-text {
+  margin-top: 10px;
+  max-width: 540px;
+  position: absolute;
+  right: 0%;
+  left: 55%;
+}
+
+.bottom-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.bottom-content {
+  position: relative;
+  padding-left: 12%;
+  padding-top: 2%;
+  padding-right: 12%;
+  height: 100%;
+}
+
+.credits p {
+  color: black;
+  font-weight: lighter;
+  font-size: 16px;
+  position: absolute;
+  bottom: 100px;
+}
+
+/************************ 'Over Mij' ************************/
+
+.me-hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.me-hero-content {
+  height: 150vh;
+  padding-left: 8%;
+  padding-top: 8%;
+  padding-right: 8%;
+  line-height: 40px;
+}
+
+.me-hero-title h1 {
+  display: block;
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.me-hero-content h3 {
+  color: grey;
+  font-size: 28px;
+  font-weight: 300;
+  margin-left: 50%;
+  margin-right: 0%;
+  line-height: 50px;
+  display: block;
+}
+
+.me-hero-content p {
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  margin-left: 50%;
+  margin-right: 0%;
+  display: inline-block;
+}
+
+.mepic {
+  position: absolute;
+  height: 600px;
+  left: 150px;
+  top: 300px;
+  padding: 0px;
+  display: inline-block;
 }
