@@ -1,0 +1,223 @@
+/************************ Navigatiebar ************************/
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0px;
+  display: block;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding-top: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo {
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+  font-size: clamp(10px, 25px, 30px);
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: blueviolet;
+  transition: 0.4s;
+}
+
+.active {
+  color: blueviolet;
+}
+
+/************************ Hero Content ************************/
+
+.hero {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-content {
+  padding-left: 8%;
+  padding-top: 8%;
+  padding-right: 8%;
+  line-height: 40px;
+  height: auto;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 20px 0px 20px;
+}
+
+h3 {
+  color: grey;
+  font-size: 28px;
+  font-weight: 300;
+  margin-right: 50%;
+  line-height: 50px;
+}
+
+h3 span {
+  font-weight: 800;
+  color: black;
+}
+
+/************************ Main Content ************************/
+
+.middle-container {
+  height: 200vh;
+  position: relative;
+  width: 100%;
+}
+
+.midsection-1 {
+  padding-left: 12%;
+  padding-top: 0%;
+  padding-right: 12%;
+}
+
+.midsection-1 img {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  height: 750px;
+  margin-top: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.midsection-1 .medq-opener {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 100%;
+  height: 750px;
+  margin-top: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+.midsection-1 .text {
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+}
+
+h4 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 200;
+  color: grey;
+  line-height: 1.75;
+  letter-spacing: 0.015rem;
+}
+
+.midsection-2 {
+  padding-top: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: content-box;
+}
+
+.medqpic {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 55%;
+  height: 1000px;
+  margin-top: 10px;
+  object-fit: cover;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.midsection-2 .text {
+  position: absolute;
+  display: inline-block;
+  width: 30%;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+h5::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #555;
+  vertical-align: top;
+  margin-top: 11px;
+  margin-right: 20px;
+}
+
+/************************ Footer Content ************************/
+
+footer {
+  height: 50vh;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.bottom-content {
+  position: relative;
+  padding-left: 12%;
+  padding-top: 2%;
+  padding-right: 12%;
+  height: 100%;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.credits p {
+  color: black;
+  font-weight: lighter;
+  font-size: 16px;
+  position: absolute;
+  top: 100px;
+}
