@@ -1,0 +1,352 @@
+/************************ Navigatiebar ************************/
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0px;
+  display: block;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding-top: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo {
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.navbar h2 a {
+  color: black;
+  text-decoration: none;
+  font-size: clamp(10px, 25px, 30px);
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: blueviolet;
+  transition: 0.4s;
+}
+
+.active {
+  color: blueviolet;
+}
+
+/************************ Hero Content ************************/
+
+.hero {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-content {
+  padding-left: 8%;
+  padding-top: 8%;
+  padding-right: 8%;
+  line-height: 40px;
+  height: 600px;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: 900;
+  margin: 20px 0px 20px;
+}
+
+h3 {
+  color: grey;
+  font-size: 28px;
+  font-weight: 300;
+  margin-right: 50%;
+  line-height: 50px;
+}
+
+h3 span {
+  font-weight: 800;
+  color: black;
+}
+
+.profilepic {
+  height: 450px;
+  position: absolute;
+  right: 150px;
+  top: 35px;
+  padding: 0px;
+}
+
+/************************ Main Content ************************/
+
+.middle-container {
+  height: 200vh;
+  width: 100%;
+  position: relative;
+}
+
+.middle-content {
+  padding-left: 12%;
+  padding-top: 2%;
+  padding-right: 12%;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+h5::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #555;
+  vertical-align: top;
+  margin-top: 11px;
+  margin-right: 20px;
+}
+
+.divider {
+  margin-top: -150px;
+  width: 100%;
+}
+
+.project-card {
+  margin: 150px 0px 400px;
+  padding: 2% 0px 2%;
+  position: relative;
+  height: 230px;
+}
+
+.project-1-text {
+  margin-top: 10px;
+  margin-right: 55%;
+  max-width: 540px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 200;
+  color: grey;
+  line-height: 1.75;
+  letter-spacing: 0.015rem;
+}
+
+.mdesign-thumbnail {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: grey;
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  right: 0%;
+  top: 10px;
+  border-radius: 10px;
+  transition: 250ms ease-in-out;
+  object-fit: cover;
+  object-position: top;
+}
+
+.mdesign-thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.project-button {
+  position: absolute;
+  margin-top: 20px;
+}
+
+main a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+body .project-button a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  left: 0%;
+  bottom: -15px;
+  transition: 0.3s;
+}
+
+body .project-button a:hover::after {
+  height: 10px;
+  width: 100%;
+}
+
+.webdesign-thumbnail {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  left: 0%;
+  top: 10px;
+  object-fit: contain;
+  transition: 250ms ease-in-out;
+}
+
+.webdesign-thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.project-2-text {
+  margin-top: 10px;
+  max-width: 540px;
+  position: absolute;
+  right: 0%;
+  left: 55%;
+}
+
+.more-project-button {
+  position: absolute;
+  margin-top: -125px;
+  margin-left: 33%;
+}
+
+.more-project-button a {
+  font-size: 18px;
+}
+
+main .more-project-button a::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  left: 0%;
+  bottom: -15px;
+  transition: 0.3s;
+}
+
+main .more-project-button a:hover::after {
+  height: 10px;
+  width: 100%;
+}
+
+/************************ Footer Content ************************/
+
+.bottom-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.bottom-content {
+  position: relative;
+  padding-left: 12%;
+  padding-top: 2%;
+  padding-right: 12%;
+  height: 100%;
+}
+
+.bottom-content span {
+  color: black;
+  font-weight: 600;
+}
+
+.credits p {
+  color: black;
+  font-weight: lighter;
+  font-size: 16px;
+  position: absolute;
+  bottom: 100px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/************************ 'Over Mij' ************************/
+
+.me-hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.me-hero-content {
+  height: 150vh;
+  padding-left: 8%;
+  padding-top: 10%;
+  padding-right: 8%;
+  line-height: 40px;
+}
+
+.me-hero-title h1 {
+  display: block;
+  color: black;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.me-hero-content h3 {
+  color: grey;
+  font-size: 28px;
+  font-weight: 300;
+  margin-left: 50%;
+  margin-right: 0%;
+  line-height: 50px;
+  display: block;
+}
+
+.me-hero-content p {
+  color: black;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  margin-left: 50%;
+  margin-right: 0%;
+  display: inline-block;
+}
+
+.me-hero-content span {
+  font-weight: 800;
+}
+
+.mepic {
+  position: absolute;
+  height: 600px;
+  left: 120px;
+  top: 350px;
+  padding: 0px;
+}
