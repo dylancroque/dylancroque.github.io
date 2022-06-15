@@ -72,7 +72,7 @@ nav ul li a:hover {
 h1 {
   color: black;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 900;
   margin: 20px 0px 20px;
 }
 
@@ -104,7 +104,7 @@ main {
 
 h4 {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 800;
   margin-bottom: 0px;
 }
 
@@ -160,6 +160,24 @@ p {
 }
 
 .project-1-pic:hover {
+  transform: scale(1.03);
+}
+
+.mdesign-thumbnail {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: grey;
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  right: 0%;
+  top: 10px;
+  border-radius: 10px;
+  transition: 250ms ease-in-out;
+  object-fit: cover;
+}
+
+.mdesign-thumbnail:hover {
   transform: scale(1.03);
 }
 
@@ -222,6 +240,22 @@ body .project-button a:hover::after {
 }
 
 .medq-thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.bmc-thumbnail {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 550px;
+  height: 350px;
+  position: absolute;
+  right: 0%;
+  top: 10px;
+  transition: 250ms ease-in-out;
+  object-fit: cover;
+}
+
+.bmc-thumbnail:hover {
   transform: scale(1.03);
 }
 

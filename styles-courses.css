@@ -72,7 +72,7 @@ nav ul li a:hover {
 h1 {
   color: black;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 900;
   margin: 20px 0px 20px;
 }
 
@@ -90,28 +90,74 @@ h3 span {
 }
 
 /************************ Main Content ************************/
+/**************** Content Algemeen ****************/
 
 .middle-container {
-  height: 200vh;
+  height: 100%;
   position: relative;
   width: 100%;
+  padding-bottom: 150px;
 }
 
 .midsection-1 {
-  padding-left: 12%;
+  padding-left: 5%;
   padding-top: 0%;
-  padding-right: 12%;
+  padding-right: 5%;
 }
 
-.midsection-1 img {
+.midsection-1 .text {
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: left;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+
+h4 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  color: grey;
+  line-height: 1.75;
+  letter-spacing: 0.015rem;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+h5::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background: #555;
+  vertical-align: top;
+  margin-top: 11px;
+  margin-right: 20px;
+}
+
+/**************** Content Digitial Campaign ****************/
+.midsection-1 .dica-opener {
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
   width: 100%;
   height: 750px;
   margin-top: 10px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
+/**************** Content Media Questions ****************/
 
 .midsection-1 .medq-opener {
   border-radius: 10px;
@@ -121,28 +167,6 @@ h3 span {
   margin-top: 10px;
   object-fit: contain;
   display: block;
-}
-
-.midsection-1 .text {
-  padding-left: 5%;
-  padding-right: 5%;
-  justify-content: center;
-}
-
-h4 {
-  font-size: 35px;
-  font-weight: 600;
-  margin-top: 90px;
-  margin-bottom: 80px;
-  text-align: center;
-}
-
-p {
-  font-size: 18px;
-  font-weight: 200;
-  color: grey;
-  line-height: 1.75;
-  letter-spacing: 0.015rem;
 }
 
 .midsection-2 {
@@ -165,7 +189,7 @@ p {
   box-sizing: border-box;
 }
 
-.midsection-2 .text {
+.midsection-2 .medq-mid-text {
   position: absolute;
   display: inline-block;
   width: 30%;
@@ -173,38 +197,163 @@ p {
   margin-top: 10px;
 }
 
-h5 {
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-bottom: 100px;
+/**************** Content WebDesign ****************/
+
+.midsection-1 .webdesign-opener {
+  border-radius: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 100%;
+  height: 750px;
+  margin-top: 10px;
+  object-fit: cover;
+  display: block;
 }
 
-h5::before {
-  content: "";
+.webdesign-midsection-2 {
+  padding-left: 5%;
+  padding-top: 0%;
+  padding-right: 5%;
+}
+
+.webdesign-midsection-2 .text {
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: left;
+  justify-content: center;
+}
+
+.webdesign-midsection-2 .webdesign-homepage-showcase {
+  border-radius: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 100%;
+  height: 750px;
+  margin-top: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+/**************** Content MDesign ****************/
+
+.mdesign-midsection-2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.mdesign-midsection-2 .mdesign-mid-text {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 200px;
+  width: 30%;
+}
+
+.mdesign-mid-pic {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 30%;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 10%;
+  object-fit: contain;
   display: inline-block;
-  width: 50px;
-  height: 1px;
-  background: #555;
-  vertical-align: top;
-  margin-top: 11px;
-  margin-right: 20px;
+  position: relative;
+}
+
+.mdesign-mid-pic-2 {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 30%;
+  height: 600px;
+  margin-top: 80px;
+  margin-left: 10%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.mdesign-mid-text h4 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+/**************** Content BMC ****************/
+
+.midsection-1 .bmc-opener {
+  border-radius: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  height: 300px;
+  margin-top: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+.midsection-1 .bmc-opener-2 {
+  border-radius: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 100%;
+  padding-bottom: 80px;
+  height: 100px;
+  margin-top: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+.bmc-canvas {
+  border-radius: 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 0px 0px;
+  width: 100%;
+  padding-bottom: 80px;
+  height: 600px;
+  margin-top: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+.video-player {
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+}
+
+.video-player h4 {
+  text-align: center;
 }
 
 /************************ Footer Content ************************/
 
 footer {
+  position: relative;
   height: 50vh;
   width: 100%;
-  margin-top: 0px;
+  margin-top: -50px;
 }
 
 .bottom-content {
-  position: relative;
+  position: absolute;
   padding-left: 12%;
   padding-top: 2%;
   padding-right: 12%;
+  top: 0px;
+  width: 100%;
   height: 100%;
+  z-index: 100;
+}
+
+.footer img {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  margin-top: -50px;
+  object-fit: contain;
+  z-index: 2;
 }
 
 footer h5 {

@@ -72,7 +72,7 @@ nav ul li a:hover {
 h1 {
   color: black;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 900;
   margin: 20px 0px 20px;
 }
 
@@ -113,7 +113,7 @@ h3 span {
 
 h4 {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 800;
   margin-bottom: 0px;
 }
 
@@ -156,7 +156,7 @@ p {
   letter-spacing: 0.015rem;
 }
 
-.project-1-pic {
+.mdesign-thumbnail {
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: grey;
@@ -167,9 +167,10 @@ p {
   top: 10px;
   border-radius: 10px;
   transition: 250ms ease-in-out;
+  object-fit: cover;
 }
 
-.project-1-pic:hover {
+.mdesign-thumbnail:hover {
   transform: scale(1.03);
 }
 
@@ -210,7 +211,6 @@ body .project-button a:hover::after {
   left: 0%;
   top: 10px;
   object-fit: cover;
-  object-position: 0 55%;
   transition: 250ms ease-in-out;
 }
 
@@ -250,7 +250,6 @@ main .more-project-button a:hover::after {
 /************************ Footer Content ************************/
 
 .bottom-container {
-  background-color: lavender;
   height: 100vh;
   width: 100%;
   position: relative;
